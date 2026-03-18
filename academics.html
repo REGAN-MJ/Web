@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View the class timetable, course units, and schedule for the Department of Computing and Informatics">
+    <title>Academics & Timetable | Department of Computing & Informatics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Timer Display -->
+    <div class="timer-pill" id="timer" aria-live="polite">Loading...</div>
+    
+    <!-- Notification Area -->
+    <div id="notification-area" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Header -->
+    <header class="main-header" role="banner">
+        <div class="header-container">
+            <div class="brand">
+                <img src="https://via.placeholder.com/60x60/1a365d/ffffff?text=BUGEMA" alt="Bugema University Logo" class="uni-logo">
+                <div class="title-group">
+                    <h1>Department of Computing & Informatics</h1>
+                    <span class="motto">Excellence in Service</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="pill-nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-btn">Home</a>
+                
+                <a href="academics.html" class="nav-btn active" aria-current="page">Academics</a>
+                
+                <a href="profile.html" class="nav-btn">Profile</a>
+                
+                <a href="registration.html" class="nav-btn">Register</a>
+                
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Timetable Section -->
+            <section class="section" aria-labelledby="timetable-title">
+                <h2 id="timetable-title" class="section-title">Class Timetable</h2>
+                
+                <div class="m3-card">
+                    <div class="card-title">
+                        <span class="material-icons">schedule</span>
+                        <span>Weekly Course Schedule</span>
+                    </div>
+                    
+                    <div class="timetable-container">
+                        <table class="timetable" aria-label="Weekly class timetable showing course units, time slots, and lecturers">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Time Interval</th>
+                                    <th scope="col">Monday</th>
+                                    <th scope="col">Tuesday</th>
+                                    <th scope="col">Wednesday</th>
+                                    <th scope="col">Thursday</th>
+                                    <th scope="col">Friday</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-slot">08:00 - 10:00</td>
+                                    <td class="course-name">Advanced Java Programming<br><span class="lecturer">Dr. Alan Turing</span></td>
+                                    <td class="course-name">Software Engineering<br><span class="lecturer">Prof. Ada Lovelace</span></td>
+                                    <td class="course-name">Database Systems<br><span class="lecturer">Dr. Charles Babbage</span></td>
+                                    <td class="course-name">Web Development<br><span class="lecturer">Ms. Grace Hopper</span></td>
+                                    <td class="course-name">Computer Networks<br><span class="lecturer">Dr. Tim Berners-Lee</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">10:00 - 12:00</td>
+                                    <td class="course-name">Data Structures & Algorithms<br><span class="lecturer">Dr. Alan Turing</span></td>
+                                    <td class="course-name">Artificial Intelligence<br><span class="lecturer">Prof. Marvin Minsky</span></td>
+                                    <td class="course-name">Cybersecurity Fundamentals<br><span class="lecturer">Mr. Kevin Mitnick</span></td>
+                                    <td class="course-name">Operating Systems<br><span class="lecturer">Dr. Linus Torvalds</span></td>
+                                    <td class="course-name">Research Methods<br><span class="lecturer">Dr. Margaret Hamilton</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">12:00 - 13:00</td>
+                                    <td colspan="5" class="course-name" style="text-align: center; background: var(--white-light);">LUNCH BREAK</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">13:00 - 15:00</td>
+                                    <td class="course-name">Machine Learning<br><span class="lecturer">Prof. Geoffrey Hinton</span></td>
+                                    <td class="course-name">Cloud Computing<br><span class="lecturer">Ms. Sarah Chen</span></td>
+                                    <td class="course-name">Mobile App Development<br><span class="lecturer">Dr. Ada Lovelace</span></td>
+                                    <td class="course-name">Ethics in Computing<br><span class="lecturer">Prof. Norbert Wiener</span></td>
+                                    <td class="course-name">Project Lab<br><span class="lecturer">All Faculty</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">15:00 - 17:00</td>
+                                    <td class="course-name">Computer Architecture<br><span class="lecturer">Dr. John von Neumann</span></td>
+                                    <td class="course-name">Software Project Management<br><span class="lecturer">Ms. Amy Brown</span></td>
+                                    <td class="course-name">Data Science<br><span class="lecturer">Prof. Djikstra</span></td>
+                                    <td class="course-name">Network Security<br><span class="lecturer">Mr. Kevin Mitnick</span></td>
+                                    <td class="course-name">Industrial Attachment Prep<br><span class="lecturer">Career Office</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Course Units by Year -->
+            <section class="section" aria-labelledby="courses-title">
+                <h2 id="courses-title" class="section-title">Course Units by Year</h2>
+                
+                <div class="faculty-grid">
+                    <div class="m3-card">
+                        <div class="card-title">
+                            <span class="material-icons">school</span>
+                            <span>Year 1 - Foundation</span>
+                        </div>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Introduction to Computing</li>
+                            <li>Programming Fundamentals</li>
+                            <li>Mathematics for Computing</li>
+                            <li>Computer Hardware Basics</li>
+                            <li>Communication Skills</li>
+                            <li>Office Productivity Tools</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="m3-card">
+                        <div class="card-title">
+                            <span class="material-icons">trending_up</span>
+                            <span>Year 2 - Intermediate</span>
+                        </div>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Data Structures & Algorithms</li>
+                            <li>Database Management Systems</li>
+                            <li>Object-Oriented Programming</li>
+                            <li>Computer Networks</li>
+                            <li>Web Development</li>
+                            <li>Statistics & Probability</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="m3-card">
+                        <div class="card-title">
+                            <span class="material-icons">workspace_premium</span>
+                            <span>Year 3 - Advanced</span>
+                        </div>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Software Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Cybersecurity</li>
+                            <li>Operating Systems</li>
+                            <li>Research Methods</li>
+                            <li>Cloud Computing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="m3-card">
+                        <div class="card-title">
+                            <span class="material-icons">military_tech</span>
+                            <span>Year 4 - Specialization</span>
+                        </div>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Advanced AI & Machine Learning</li>
+                            <li>Network Security & Forensics</li>
+                            <li>Mobile App Development</li>
+                            <li>Data Science & Big Data</li>
+                            <li>Research Project</li>
+                            <li>Industrial Attachment</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Exam Schedule -->
+            <section class="section" aria-labelledby="exams-title">
+                <h2 id="exams-title" class="section-title">Examination Schedule</h2>
+                
+                <div class="m3-card">
+                    <div class="card-title">
+                        <span class="material-icons">event_note</span>
+                        <span>Semester Examinations</span>
+                    </div>
+                    
+                    <div class="timetable-container">
+                        <table class="timetable" aria-label="Examination schedule">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time</th>
+                                    <th scope="col">Course Unit</th>
+                                    <th scope="col">Venue</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-slot">Monday, May 15</td>
+                                    <td>09:00 - 12:00</td>
+                                    <td class="course-name">Advanced Java Programming</td>
+                                    <td>Exam Hall A</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">Wednesday, May 17</td>
+                                    <td>09:00 - 12:00</td>
+                                    <td class="course-name">Database Systems</td>
+                                    <td>Exam Hall B</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">Friday, May 19</td>
+                                    <td>09:00 - 12:00</td>
+                                    <td class="course-name">Artificial Intelligence</td>
+                                    <td>Exam Hall A</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">Monday, May 22</td>
+                                    <td>09:00 - 12:00</td>
+                                    <td class="course-name">Cybersecurity Fundamentals</td>
+                                    <td>Exam Hall B</td>
+                                </tr>
+                                <tr>
+                                    <td class="time-slot">Wednesday, May 24</td>
+                                    <td>09:00 - 12:00</td>
+                                    <td class="course-name">Software Engineering</td>
+                                    <td>Exam Hall A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="section" aria-labelledby="quicklinks-title">
+                <h2 id="quicklinks-title" class="section-title">Quick Links</h2>
+                <div class="contact-grid">
+                    <a href="registration.html" class="contact-card" style="text-decoration: none;">
+                        <span class="material-icons">how_to_reg</span>
+                        <h3>Course Registration</h3>
+                        <p>Register for your courses online</p>
+                    </a>
+                    <a href="faculty.html" class="contact-card" style="text-decoration: none;">
+                        <span class="material-icons">person</span>
+                        <h3>Faculty Office Hours</h3>
+                        <p>Meet with your lecturers</p>
+                    </a>
+                    <a href="contact.html" class="contact-card" style="text-decoration: none;">
+                        <span class="material-icons">help</span>
+                        <h3>Academic Support</h3>
+                        <p>Get help with your studies</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <p>&copy; 2025 Department of Computing & Informatics, Bugema University</p>
+        <p>All Rights Reserved | <a href="contact.html">Contact Us</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
