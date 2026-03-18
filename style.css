@@ -607,7 +607,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: var(--transition);
-    width: 100%;
+    
 }
 
 .google-btn:hover {
