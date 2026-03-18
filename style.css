@@ -117,12 +117,12 @@ body {
 }
 
 .uni-logo {
-    width: 60px;
-    height: 60px;
+    width: 300px;
+    height: 200px;
     border-radius: 50%;
     background: var(--white);
     padding: 5px;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .title-group h1 {
