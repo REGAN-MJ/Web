@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student profiles at the Department of Computing and Informatics">
+    <title>Student Profiles | Department of Computing & Informatics</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Timer Display -->
+    <div class="timer-pill" id="timer" aria-live="polite">Loading...</div>
+    
+    <!-- Notification Area -->
+    <div id="notification-area" aria-live="polite" aria-atomic="true"></div>
+
+    <!-- Header -->
+    <header class="main-header" role="banner">
+        <div class="header-container">
+            <div class="brand">
+                <img src="https://via.placeholder.com/60x60/1a365d/ffffff?text=BUGEMA" alt="Bugema University Logo" class="uni-logo">
+                <div class="title-group">
+                    <h1>Department of Computing & Informatics</h1>
+                    <span class="motto">Excellence in Service</span>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="material-icons">menu</span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="pill-nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-btn">Home</a>
+                <a href="academics.html" class="nav-btn">Academics</a>
+                <a href="profile.html" class="nav-btn active" aria-current="page">Profile</a>
+                <a href="registration.html" class="nav-btn">Register</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <div class="container">
+            <!-- Student Profiles -->
+            <section class="section" aria-labelledby="profile-title">
+                <h2 id="profile-title" class="section-title">Student Profiles</h2>
+                
+                <div class="faculty-grid">
+                    <!-- Student 1 -->
+                    <article class="faculty-card">
+                        <div class="photo-frame">
+                            <img src="https://via.placeholder.com/150x150/1a365d/ffffff?text=SN" alt="Sarah Nakato portrait">
+                        </div>
+                        <h3>Sarah Nakato</h3>
+                        <p class="faculty-title">Year 4 - BSc. Artificial Intelligence</p>
+                        <p class="faculty-expertise"><strong>Achievement:</strong> First Class Honors, GPA 4.0</p>
+                        <p class="faculty-contact">
+                            <strong>Hobbies:</strong> Coding, Chess<br>
+                            <strong>Favorite Food:</strong> Rolex & Matooke<br>
+                            <strong>Email:</strong> s.nakato@bugema.ac.ug
+                        </p>
+                    </article>
+                    
+                    <!-- Student 2 -->
+                    <article class="faculty-card">
+                        <div class="photo-frame">
+                            <img src="https://via.placeholder.com/150x150/2c5282/ffffff?text=DO" alt="David Okello portrait">
+                        </div>
+                        <h3>David Okello</h3>
+                        <p class="faculty-title">Year 3 - BSc. Cybersecurity</p>
+                        <p class="faculty-expertise"><strong>Achievement:</strong> Top Student Award 2024</p>
+                        <p class="faculty-contact">
+                            <strong>Hobbies:</strong> Ethical Hacking, Gaming<br>
+                            <strong>Favorite Food:</strong> Rice & Beans, Chicken<br>
+                            <strong>Email:</strong> d.okello@bugema.ac.ug
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer" role="contentinfo">
+        <p>&copy; 2025 Department of Computing & Informatics, Bugema University</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
